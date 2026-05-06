@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Watch Video</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+  background: url('https://picsum.photos/800/1200') center/cover no-repeat;
+  position: relative;
+}
+
+/* 模拟播放按钮 */
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
+}
+
+.play:after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 22px;
+  border-style: solid;
+  border-width: 18px 0 18px 28px;
+  border-color: transparent transparent transparent white;
+}
+</style>
+</head>
+
+<body onclick="window.location.href='https://t.me/你的TG链接'">
+
+<div class="video">
+  <div class="play"></div>
+</div>
+
+</body>
+</html>
