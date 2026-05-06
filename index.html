@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>完整版视频点击观看</title>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="完整版视频点击观看">
+<meta name="twitter:description" content="点击查看完整版">
+<meta name="twitter:image" content="https://files.catbox.moe/e8w8qd.jpg">
+
+<!-- Open Graph -->
+<meta property="og:title" content="完整版视频点击观看">
+<meta property="og:description" content="点击查看完整版">
+<meta property="og:image" content="https://files.catbox.moe/e8w8qd.jpg">
+<meta property="og:type" content="website">
+
+<style>
+body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: black;
+}
+
+/* 顶部标题 */
+.title {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+
+/* 底部按钮 */
+.button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00c37a;
+    color: white;
+    padding: 14px 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* 整页点击层 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <div class="title">
+        完整版视频点击下载观看
+    </div>
+
+    <video autoplay muted playsinline loop>
+        <source src="https://files.catbox.moe/e8w8qd.mp4" type="video/mp4">
+    </video>
+
+    <div class="button">
+        立即下载APP
+    </div>
+
+    <div class="overlay"
+         onclick="window.location.href='https://qqc.bar'">
+    </div>
+
+</div>
+
+</body>
+</html>
